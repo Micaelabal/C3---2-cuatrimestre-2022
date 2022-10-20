@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	font-family: 'Noto Sans', sans-serif;
+	
+}
+
+.container{
+	background-color: #C9233D;
+	display: flex;
+	top: 0;
+	color: #FFF6EE;
+	}
+
+.encabezado{
+	flex-direction: column;
+	display: flex;
+	padding: 40px;
+}
+
+.menu{
+	padding: 30px 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	font-weight: 400;
+	background-color: #C9233D;
+	position: inline;
+	}
+	
+.navbar{
+	height: 100px;
+	width:100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+.nav-branding{
+	font-size: 1.5em;
+	font-weight: 700;
+	}
+
+nav ul li{
+	color: #FFF;
+	}
+
+nav ul{
+	list-style: none;
+	padding-left: 20px;
+	}
+
+.nav_link:hover{
+	border: 1px solid #FFF6EE;
+	border-radius: 25px;
+	padding: 10px;
+	text-transform: lowercase;
+	background-color: #FFF6EE;
+}
+
+.nav_link{
+	padding: 10px 20px;
+	font-size: 17px;
+}
+
+.nav_link:visited, .nav_link:hover, body{
+	color: #55052C;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer{
+	color: white;
+	background-color: #C9233D;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	}
+
+.flex_item_footer{
+	flex-direction: column;
+}
+
+.flex_item_nav_footer ul li {
+	display: inline;
+	padding: 23px;
+}
+
+footer ul{
+	list-style: none;
+}
+
+.img_perfil{
+	background-image: url("img/fotodeperfilcv_BalmacedaMicaela.svg");
+	width: 130px;
+	height: 130px;
+}
+
+.icons1{
+	background-image: url("img/icons8-adobe-illustrator-48.png");
+}
+
+.icons2{
+	background-image: url("img/icons8-adobe-photoshop-48.png");
+}
+
+.icons3{
+	background-image: url("img/icons8-adobe-indesign-48.png");
+}
+
+.icons4{
+	background-image: url("img/linkedin.png");
+}
+
+.icons5{
+	background-image: url("img/behance.png");
+}
+
+.icons4, .icons5{
+	width: 32px;
+	height: 32px;
+}
+
+.icons1, .icons2, .icons3{
+	width: 48px;
+	height: 48px;
+}
+
+.icons1, .icons2, .icons3, .icons4, .icons5, .img_perfil{
+	background-repeat: no-repeat;
+}
+
+h1{
+	font-size: 1.563em;
+}
+
+h2{
+	font-size: 1em;
+}
+	
+h3{
+	font-size: 1.25em;
+}
+
+h4{
+	font-size: 0.813em;
+}
+
+.caja_contenidos_formacion li, .caja_contenidos_expprofesional li, .cajainformacionextras p, .cajabiografia p{
+	font-size: 0.813em;
+	
+}
+
+h1, h2, h3, h4, .container_contenidos_expprofesional li, .container_contenidos_formacion li {
+	font-weight: 700;
+	list-style: none;
+	text-decoration: none;
+}
+
+.cajabiografia{
+	display: flex;
+	width: 50%;
+}
+
+
+main{
+	justify-content: space-evenly;
+	display: flex;
+	background-color: #FFF6EE;
+	list-style: none;
+	padding: 100px;
+	height: 320px; 
+}
+
+.caja_contenidos_expprofesional ol, .caja_habilidades_extras ol, .container_formacion ol{
+	list-style: none;
+}
+
+.caja_contenidos_expprofesional, .container_formacion{
+	width: 100%;
+	margin: 29px;
+}
+
+.caja_habilidades_extras ol{
+	display: flex;
+	align-content: space-around;
+}
+
+.container_centrado{
+	align-items: center;
+	width: 75%;
+}
+
+.caja_habilidades_extras{
+	width: 50%;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 12px;
+}
+
+.flex_item_habilidades ol li{
+	padding: 15px;
+}
+
+/*----Responsive----*/
+
+
+@media screen and (min-width: 600px){
+	
+	body, .container, .navbar, main, .caja_biografia, .container_centrado, .container_formacion, .caja_contenidos_expprofesional, .caja_habilidades_extras, .flex_item_habilidades, .cajainformacionextras{
+		widht: 100%;
+	}
+	
+	header{
+		padding: 40px;
+		justify-content: space-around;
+	}
+	
+	
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%; 
+		padding: 141px;
+	}
+	
+	.container{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.menu{
+		width: 100%;
+		height: 50px;
+		padding-top: 30px;
+		justify-content: space-around;
+	}
+	
+	.nav_link {
+		padding: 10px 20px;
+		font-size: 17px;
+	}
+	
+	h1{
+		font-size: 1.75em;
+	}
+	
+	h2{
+		font-size: 1.125em;
+	}
+	
+	h3{
+		font-size: 1.375em;
+	}
+	
+	h4{
+		font-size: 1em;
+	}
+	
+	.footer{
+		padding: 92px;
+		justify-content: space-between;
+	}
+	
+	.caja_contenidos_formacion li, .caja_contenidos_expprofesional li, .cajainformacionextras p, .cajabiografia p{
+		font-size: 16px;
+	}
+	
+	.flex_item_habilidades ol li {
+		padding: 50px;
+	}
+	
+	.caja_habilidades_extras {
+		width: 80%;
+		height: 70%;
+	}
+	
+}
